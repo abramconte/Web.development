@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<div>
+    <!--This is for slide panel-->
+    <div class = "carousel carousel-slider center">
+        <div>"carousel-fixed-item center
+        </div>
+    <div class = "carousel-item red black-text" href= "one!">
+        <h2>John Abram Comte</h2>
+        <!--this is for the modal-->
+        <button data-target="modal1" class="btn modal-trigger">Age</button>
+        <div id = "modal1" class = "modal">
+            <div class = "modal-content">
+                <h4>my age is 25</h4>
+                <p>Years old</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+
+        </div>
+    </div>
+</div>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    <script>
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+    </script>
+    <script>$(document).ready(function(){
+        $('.modal').modal();
+      });</script>
+</body>
+</html>
